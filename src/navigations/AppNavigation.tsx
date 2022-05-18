@@ -8,6 +8,7 @@ import ThemeChangeExample from '../screens/ThemeChangeExample';
 import PinchToZoom from '../screens/PinchToZoom';
 import DoubleTapLike from '../screens/DoubleTapLike';
 import ScrollViewWithPanGesture from '../screens/ScrollViewWithPanGesture';
+import AnimatedColorPicker from '../screens/AnimatedColorPicker';
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -22,6 +23,10 @@ export default function AppNavigation() {
       <Drawer.Screen
         name="Scroll View With PanGesture"
         component={ScrollViewWithPanGesture}
+      />
+      <Drawer.Screen
+        name="Animated Color Picker"
+        component={AnimatedColorPicker}
       />
     </Drawer.Navigator>
   );
