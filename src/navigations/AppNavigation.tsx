@@ -7,6 +7,7 @@ import AnimatedSwiper from '../screens/AnimatedSwiper';
 import ThemeChangeExample from '../screens/ThemeChangeExample';
 import PinchToZoom from '../screens/PinchToZoom';
 import DoubleTapLike from '../screens/DoubleTapLike';
+import ScrollViewWithPanGesture from '../screens/ScrollViewWithPanGesture';
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -18,6 +19,10 @@ export default function AppNavigation() {
       <Drawer.Screen name="Theme Change" component={ThemeChangeExample} />
       <Drawer.Screen name="Pinch To Zoom" component={PinchToZoom} />
       <Drawer.Screen name="Double Tap Like" component={DoubleTapLike} />
+      <Drawer.Screen
+        name="Scroll View With PanGesture"
+        component={ScrollViewWithPanGesture}
+      />
     </Drawer.Navigator>
   );
 }
