@@ -9,6 +9,8 @@ import PinchToZoom from '../screens/PinchToZoom';
 import DoubleTapLike from '../screens/DoubleTapLike';
 import ScrollViewWithPanGesture from '../screens/ScrollViewWithPanGesture';
 import AnimatedColorPicker from '../screens/AnimatedColorPicker';
+import AnimatedCircularProgress from '../screens/AnimatedCircularProgress';
+import SwipeToDelete from '../screens/SwipeToDelete';
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -28,6 +30,11 @@ export default function AppNavigation() {
         name="Animated Color Picker"
         component={AnimatedColorPicker}
       />
+      <Drawer.Screen
+        name="Animated Circular Progress"
+        component={AnimatedCircularProgress}
+      />
+      <Drawer.Screen name="Swipe To Delete" component={SwipeToDelete} />
     </Drawer.Navigator>
   );
 }
