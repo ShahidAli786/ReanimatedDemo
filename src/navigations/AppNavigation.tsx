@@ -11,11 +11,14 @@ import ScrollViewWithPanGesture from '../screens/ScrollViewWithPanGesture';
 import AnimatedColorPicker from '../screens/AnimatedColorPicker';
 import AnimatedCircularProgress from '../screens/AnimatedCircularProgress';
 import SwipeToDelete from '../screens/SwipeToDelete';
+import RippleEffect from '../screens/RippleEffect';
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
   return (
-    <Drawer.Navigator initialRouteName="Basics">
+    <Drawer.Navigator
+      screenOptions={{swipeEnabled: false, unmountOnBlur: true}}
+      initialRouteName="Basics">
       <Drawer.Screen name="Basics" component={Basics} />
       <Drawer.Screen name="Gesture Handler" component={GestureHandlerExample} />
       <Drawer.Screen name="Animated Swiper" component={AnimatedSwiper} />
@@ -35,6 +38,7 @@ export default function AppNavigation() {
         component={AnimatedCircularProgress}
       />
       <Drawer.Screen name="Swipe To Delete" component={SwipeToDelete} />
+      <Drawer.Screen name="Ripple Effect" component={RippleEffect} />
     </Drawer.Navigator>
   );
 }

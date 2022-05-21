@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-shadow */
 import {Text, StyleSheet, Platform, Dimensions} from 'react-native';
-import React, {useCallback} from 'react';
+import React from 'react';
 import {TaskInterface} from '../screens/SwipeToDelete';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {

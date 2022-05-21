@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable @typescript-eslint/no-shadow */
 import {View, Text, StyleSheet} from 'react-native';
 import React, {useCallback, useRef, useState} from 'react';
