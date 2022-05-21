@@ -47,7 +47,7 @@ const Ripple: React.FC<RippleProps> = ({style, onTap, children}) => {
         console.log('tap');
       },
       onFinish: () => {
-        rippleOpacity.value = withTiming(0);
+        rippleOpacity.value = withTiming(0, {duration: 1000});
       },
     });
   const rStyle = useAnimatedStyle(() => {
