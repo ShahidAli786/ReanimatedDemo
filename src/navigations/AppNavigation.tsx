@@ -12,6 +12,7 @@ import AnimatedColorPicker from '../screens/AnimatedColorPicker';
 import AnimatedCircularProgress from '../screens/AnimatedCircularProgress';
 import SwipeToDelete from '../screens/SwipeToDelete';
 import RippleEffect from '../screens/RippleEffect';
+import LayoutAnimation from '../screens/LayoutAnimation';
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -39,6 +40,7 @@ export default function AppNavigation() {
       />
       <Drawer.Screen name="Swipe To Delete" component={SwipeToDelete} />
       <Drawer.Screen name="Ripple Effect" component={RippleEffect} />
+      <Drawer.Screen name="Layout Animation" component={LayoutAnimation} />
     </Drawer.Navigator>
   );
 }
